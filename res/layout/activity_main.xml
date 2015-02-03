@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="320dip"
+        android:layout_height="320dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/quick_launcher_bg" />
+
+    <Button
+        android:id="@+id/btn_center"
+        android:layout_width="108dip"
+        android:layout_height="108dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/quick_launcher_tab_bg" />
+    <!--
+		这里的Button是占位用的，可见度设为不可见，要想扩大焦点范围就把按钮的宽和高扩大即可 焦点位置可通过改变按钮位置实现改变
+	这里可用别的控件代替，别如TextView等
+    -->
+
+    <Button
+        android:id="@+id/tv_1"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_above="@+id/btn_center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>
